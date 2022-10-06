@@ -11,7 +11,7 @@ public class TimestampLogger extends LoggerDecorator{
         super.log(message);
     }
 
-    public String addTimestamp(String message) {
+    private String addTimestamp(String message) {
         String timeStamp = new Date().toString();
         return timeStamp + " - " + message;
     }
